@@ -1,4 +1,5 @@
 // pages/home_video/index.js
+import {getTopMVs} from '../../service/api_video'
 Page({
 
   /**
@@ -11,8 +12,9 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad(options) {
-
+  onLoad:async function (options) {
+    const res = await getTopMVs(0);
+    this.setData({ topMVs: res.data });
   },
 
   /**
