@@ -1,0 +1,26 @@
+{
+  "pages": [
+    "pages/home_music/index",
+    "pages/home_video/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Weixin",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+      "pagePath": "pages/home_music/index",
+      "text": "音乐"
+     },
+     {
+      "pagePath": "pages/home_video/index",
+      "text": "视频"
+     }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
