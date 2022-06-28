@@ -55,8 +55,10 @@ Page({
   /**
    * 页面上拉触底事件的处理函数
    */
-  onReachBottom() {
-
+  onReachBottom: async function(){
+    const res = await getTopMVs(this.data.topMVs.length)
+    this.setData({ topMVs:this.data.topMVs.concat(res.data)})
+    console.log('reach bottom')
   },
 
   /**
